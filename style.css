@@ -6,33 +6,35 @@
 }
 
 .carousel {
+  display: flex;
+  flex-direction: row;
   /* margin: 90px; */
   width: 100vw;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   overflow-x: auto;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   height: 34rem;
-  /* object-fit: cover; */
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .group {
   display: flex;
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  animation: spin 8s infinite linear;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+  animation: spin 20s infinite linear;
 }
 .group::-webkit-scrollbar {
-  display: hidden;
+  display: none;
 }
 /* the image conatiner styling */
 .imgContSlide {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* Temp color to see what I'm doing */
-  background-color: aquamarine;
-  flex: 0 0 58rem;
+  flex: 0 0 57rem;
   overflow-y: auto;
 }
 /* Adjusting img files to fit their container */
@@ -45,7 +47,7 @@ img {
     translate: 0;
   }
   to {
-    translate: -80%;
+    translate: -100%;
   }
 }
 
@@ -55,5 +57,5 @@ img {
   align-items: center;
   justify-content: center;
   padding: 3.5rem;
-  background-color:;
+  /* background-color:; */
 }
