@@ -4,3 +4,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.carousel {
+  margin: 100px auto;
+  width: 90%;
+  border: 5ps solid red;
+  overflow-x: auto;
+}
+
+.group {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+/* the image conatiner styling */
+.imgContSlide {
+  /* Temp color to see what I'm doing */
+  background-color: aquamarine;
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+}
+
+.welcomeTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem;
+  background-color:;
+}

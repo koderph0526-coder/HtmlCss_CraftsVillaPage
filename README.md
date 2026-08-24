@@ -1,3 +1,15 @@
+# Oppgave:
+## Link til oppgavetekst:
+'https://jobloop.instructure.com/courses/557/assignments/11009'
+
+- Viktige punkter:
+
+
+
+
+
+
+
 # Icon credits: (Because I can't seem to figure out which to use just store credit for them here)
 
 - brainstorm.png -> 'https://www.flaticon.com/free-icon/brainstorm_2967449?related_id=2967658&origin=search'
