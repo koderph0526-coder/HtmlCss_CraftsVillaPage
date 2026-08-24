@@ -4,8 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffc75ee2;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Group styling on headliners to give them some air */
@@ -14,6 +18,7 @@ h2,
 h3,
 h4 {
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .carousel {
@@ -36,7 +41,7 @@ h4 {
   justify-content: center;
   align-items: center;
   padding-right: 0;
-  animation: spin 25s infinite linear;
+  animation: spin 20s infinite linear;
 }
 .group::-webkit-scrollbar {
   display: none;
@@ -45,7 +50,7 @@ h4 {
 .imgContSlide {
   justify-content: center;
   align-items: center;
-  flex: 0 0 57rem;
+  flex: 0 0 52rem;
   overflow-y: auto;
 }
 /* Adjusting img files to fit their container */
@@ -76,21 +81,24 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  margin: 1.5rem;
+  padding: 0 5rem 0 5rem;
 }
 
 .actiCardGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  padding-top: 2rem;
 }
 
 .actiCard {
   background-color: rgb(156, 255, 222);
-  padding: 2.5rem;
+  padding: 3rem;
   border: 5px dotted rgb(20, 159, 159);
   border-radius: 25px;
+  max-width: 36rem;
+  /* Ready to activate when the other pages are done */
+  /* cursor: pointer; */
 }
 
 .actiClassInfo {
@@ -99,4 +107,15 @@ img {
 }
 .actiInfoBoldTxt {
   font-weight: bold;
+}
+
+.workshCardImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 28rem;
+  max-height: 18.5rem;
+  object-fit: contain;
+  object-position: center center;
+  overflow: hidden;
 }
