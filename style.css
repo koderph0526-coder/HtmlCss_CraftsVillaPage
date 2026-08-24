@@ -6,27 +6,47 @@
 }
 
 .carousel {
-  margin: 100px auto;
-  width: 90%;
-  border: 5ps solid red;
+  /* margin: 90px; */
+  width: 100vw;
+  border: 5px solid red;
   overflow-x: auto;
+  overflow-y: hidden;
+  height: 34rem;
+  /* object-fit: cover; */
 }
 
 .group {
   display: flex;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation: spin 8s infinite linear;
 }
-
+.group::-webkit-scrollbar {
+  display: hidden;
+}
+/* the image conatiner styling */
+.imgContSlide {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* Temp color to see what I'm doing */
+  background-color: aquamarine;
+  flex: 0 0 58rem;
+  overflow-y: auto;
+}
+/* Adjusting img files to fit their container */
 img {
   width: 100%;
 }
 
-/* the image conatiner styling */
-.imgContSlide {
-  /* Temp color to see what I'm doing */
-  background-color: aquamarine;
-  flex: 0 0 5em;
-  height: 5em;
-  padding: 1em;
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -80%;
+  }
 }
 
 .welcomeTxt {
