@@ -40,7 +40,7 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-right: 0;
+  /* padding-right: 0; */
   animation: spin 20s infinite linear;
 }
 .group::-webkit-scrollbar {
@@ -63,7 +63,7 @@ img {
     translate: 0;
   }
   to {
-    translate: -100%;
+    translate: -70%;
   }
 }
 
