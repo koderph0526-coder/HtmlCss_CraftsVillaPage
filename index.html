@@ -23,28 +23,53 @@
         <button class="navBtn" id=""></button>
         <button class="navBtn" id=""></button>
       </nav>
-      <!-- FIX the buttons to hover on top of the imgCarousel -->
+      <!-- FIX the buttons to hover on top of the imgCarousel! -->
       <div class="carousel">
         <div class="group">
           <figure class="imgContSlide">
-            <img src="./img/creativeCafe.jpg" alt="" class="imgSlide" />
+            <img
+              src="./img/creativeCafe.jpg"
+              alt="Et bord ved vindu, med to tegneblokker og tegneutstyr, en kaffekopp og presskanne."
+              class="imgSlide"
+            />
           </figure>
           <figure class="imgContSlide">
-            <img src="./img/mosaicSplash.jpg" alt="" class="imgSlide" />
+            <img
+              src="./img/mosaicSplash.jpg"
+              alt="Fargerikt mosaikk mønster i spraglende regnbuefarger."
+              class="imgSlide"
+            />
           </figure>
           <figure class="imgContSlide">
-            <img src="./img/socialSplah.jpg" alt="" class="imgSlide" />
+            <img
+              src="./img/socialSplah.jpg"
+              alt="overblikk av et bord med en vennegjeng som spiller kort, på bordet er glass og skåler med diverse salt snacks"
+              class="imgSlide"
+            />
           </figure>
           <figure class="imgContSlide">
-            <img src="./img/paintingCarouselImg.jpg" alt="" class="imgSlide" />
+            <img
+              src="./img/paintingCarouselImg.jpg"
+              alt="En smilende kvinne med malingsflekker i ansiktet"
+              class="imgSlide"
+            />
           </figure>
           <figure class="imgContSlide">
-            <img src="./img/mosaicCreativeSplash.jpg" alt="" class="imgSlide" />
+            <img
+              src="./img/mosaicCreativeSplash.jpg"
+              alt="veggmaleri, med teksten 'You are beautiful' og en stor sommerfugl alle detaljer og farger er laget i mosaikk."
+              class="imgSlide"
+            />
           </figure>
           <figure class="imgContSlide">
-            <img src="./img/boardGameSplash.jpg" alt="" class="imgSlide" />
+            <img
+              src="./img/boardGameSplash.jpg"
+              alt="Fire venner som spiller mahjong."
+              class="imgSlide"
+            />
           </figure>
         </div>
+        <!-- Repeat of the imgs above to make the rotating animation as smooth as possible, according to my research the "aria-hidden" should mean that the accessibility aids ignore it as it is purely there for visual design purposes -->
         <div aria-hidden class="group">
           <figure class="imgContSlide">
             <img src="./img/creativeCafe.jpg" alt="" class="imgSlide" />
@@ -64,12 +89,11 @@
           <figure class="imgContSlide">
             <img src="./img/boardGameSplash.jpg" alt="" class="imgSlide" />
           </figure>
-          <!-- ADD ALT TXT!! -->
+          <!-- Add ALT txt to group clone, just in case? -->
         </div>
       </div>
     </header>
     <main>
-      <!-- Ready the sections that are in essense my main div Cards -->
       <!-- First section is a little welcome text -->
       <section class="welcomeTxt">
         <h1>Velkommen til CRAFTSVILLA!</h1>
@@ -85,6 +109,7 @@
           kunst og utforske kreativiteten sin.
         </p>
       </section>
+      <!-- All the incoming sections are supposed to be a mini taste/intro that will eventually lead to their own dedicated pages with a link -->
       <!-- Following section showcases classes and workshops, and will also function like buttons/links to separate childPages when they are ready -->
       <section class="workshInfo">
         <h2>Oversikt over Kurs og Workshop tilbud:</h2>
@@ -225,15 +250,44 @@
       </section>
       <!-- This section is for signing up to the classes or workshops above, NOTE: is should be a seperate page -->
       <section class="signUpForm">
-        <h3>Her er påmeldingskjema til kurs og aktiviteter</h3>
+        <h3>Her er påmeldingskjema til kurs og workshops</h3>
         <form action="">
           <label for="text">Fyll inn info</label>
           <div class="formGrid">
             <input type="text" placeholder="Fullt navn" required="required" />
-            <input type="text" placeholder="Ditt Kjønn" />
+            <select name="gender" id="">
+              <option value="1">Non-Binær</option>
+              <option value="2">Mann</option>
+              <option value="3">Kvinne</option>
+              <option value="4">Ønsker ikke å oppgi</option>
+            </select>
             <input type="text" placeholder="Din adresse" required="required" />
             <input type="text" placeholder="Fødselsdato: dd.mm.åååå" />
+            <!-- Note to self: May need different parting into divs and css to achieve the visual I want -->
           </div>
+          <div class="wsAndcoptions">
+            <h4>Kurs</h4>
+            <select name="classes" id="">
+              <option value="0">Ikke kurs</option>
+              <option value="1">Mosaikk Kunst</option>
+              <option value="2">Akvarellmaling</option>
+              <option value="3">Lerretsmaling</option>
+            </select>
+            <h4>Workshops</h4>
+            <div class="workshopOption">
+              <label for="workshopActivity">
+                Lek Med Leire
+                <input type="checkbox" />
+              </label>
+              <label for="workshopActivity">
+                Sy og Strikk <input type="checkbox"
+              /></label>
+              <label for="workshopActivity"
+                >Brett og kortspill <input type="checkbox"
+              /></label>
+            </div>
+          </div>
+          <input type="text" placeholder="Dine Email" />
         </form>
       </section>
       <section class="imgGalleryPrev">
