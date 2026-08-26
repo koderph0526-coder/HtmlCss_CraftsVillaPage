@@ -168,12 +168,6 @@ label {
   padding: 0.5rem;
 }
 
-.workshopOption {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
 .wsAndcoptions {
   margin-top: 3rem;
   display: flex;
@@ -189,9 +183,37 @@ label {
 
 .wsAndcoptions > label {
   text-align: center;
-  margin-left: 8rem;
+}
+.workshopOptionCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* label > input {
-  margin-left: 9rem;
-} */
+.workshopOptionCont > label {
+  order: 1;
+}
+.workshopOptionCont > input {
+  order: 2;
+}
+
+/* GalleryGrid */
+.imgGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+.imgGalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  width: 85vw;
+}
+.imgContGallery {
+  width: 26rem;
+  height: 16rem;
+  overflow-y: hidden;
+}
