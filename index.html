@@ -15,6 +15,15 @@
   <body>
     <header>
       <!-- Per my design idea, I want the header to be the heroBanner/splash. A gently rotating display of img that is. -->
+      <nav class="navBtnBar">
+        <button class=" navBtn" id="navHome">Home</button>
+        <button class="navBtn" id="navContact"></button>
+        <button class="navBtn" id=""></button>
+        <button class="navBtn" id=""></button>
+        <button class="navBtn" id=""></button>
+        <button class="navBtn" id=""></button>
+      </nav>
+      <!-- FIX the buttons to hover on top of the imgCarousel -->
       <div class="carousel">
         <div class="group">
           <figure class="imgContSlide">
@@ -55,16 +64,9 @@
           <figure class="imgContSlide">
             <img src="./img/boardGameSplash.jpg" alt="" class="imgSlide" />
           </figure>
+          <!-- ADD ALT TXT!! -->
         </div>
       </div>
-      <nav class="navBtnBar">
-        <button class=" navBtn" id="navHome">Home</button>
-        <button class="navBtn" id="navContact"></button>
-        <button class="navBtn" id=""></button>
-        <button class="navBtn" id=""></button>
-        <button class="navBtn" id=""></button>
-        <button class="navBtn" id=""></button>
-      </nav>
     </header>
     <main>
       <!-- Ready the sections that are in essense my main div Cards -->
@@ -134,22 +136,96 @@
               <img src="./img/oilPaintingClass.jpg" alt="" />
             </figure>
             <h4>Pris: 300kr</h4>
+            <p>
+              Ønsker du å male et bilde på lerret, enten det er egen kunst eller
+              en kopi av et bilde du liker godt? Da er dette kurset for deg! Vi
+              går gjennom generelle teknikker med mulighet for å utdype i
+              alternative teknikker ettersom hva deltagerene er mest interessert
+              i. Ta med godt humør, en kopp humor og vær forberedt på gode
+              latterpauser!
+            </p>
+            <p class="actiClassInfo">
+              Sett inkluderer:
+              <span class="actiInfoBoldTxt"
+                >Ramme, akrylpapir med designmal, akrylfarger, pensler</span
+              >
+            </p>
+            <p>Ta gjerne med olje eller akrylmaling om man fortrekker det.</p>
           </article>
           <article class="actiCard">
-            <h3></h3>
+            <h3>Lek med leire</h3>
+            <figure class="workshCardImg">
+              <img
+                src="./img/clayWorkshop.jpg"
+                alt="To hender som knar leire på et trebord"
+              />
+            </figure>
+            <h4>Aktive dager: tirsdag, torsdag og annenhver lørdag</h4>
+            <p>
+              Vi har kjevler, diverse verktøy, arbeidsbenk, tørkeskap og tilgang
+              til keramikkovn. Hvilke leire du ønsker å jobbe med er opp til deg
+              da du selv tar med ønsket matriell av leire. Om man ønsker
+              spesifikke glasurer kan dette bestilles ved behov om kostnad
+              dekkes av gruppe eller privat.
+            </p>
+            <p class="actiClassInfo">
+              Om ønskelig kan man booke arbeidrommet utenom aktive dager, men
+              det er da på egen regning. Kan avtales med
+              <!-- sett inn AdminNavn-->
+              Anne Lise Morgans.
+            </p>
           </article>
           <article class="actiCard">
-            <h3></h3>
+            <h3>Sy og strikk</h3>
+            <figure class="workshCardImg">
+              <img
+                src="./img/textileWorkshop.jpg"
+                alt="En kurv med sakser, markeringstusj og diverse farget tråd i."
+              />
+            </figure>
+            <h4>Aktive dager: mandag, onsdag og fredag</h4>
+            <p>
+              Trives du med tekstilarbeid i diverse format? Her er vi en god
+              gruppe som samles på tekstilrommet med en stor kanne kaffe og
+              tevannet klart til en hyggelig "arbeidsøkt". Om du strikker, syr,
+              hekler eller broderer er opp til deg, vi ser frem til å bli kjent
+              med deg uansett preferanse!
+            </p>
+            <p class="actiInfoBoldTxt">
+              Vi har noe basis utstyr tilgjengelig, men mye må vi enten skaffe
+              felles eller privat.
+            </p>
           </article>
           <article class="actiCard">
-            <h3></h3>
+            <h3>Brett og kortspill</h3>
+            <figure class="workshCardImg">
+              <img
+                src="./img/boardgameCard.jpg"
+                alt="Hjørnet på et Monopoly brettspill, med spillbrikker, kort og små hus på."
+              />
+            </figure>
+            <h4>Aktive dager: alle dager i uken!</h4>
+            <p>
+              Her spiller vi mye forskjellig og har tilgang til to rom utenom
+              kantinen. Så enten du trives bedre med kort eller brettspill, så
+              har vi noe for alle! Om Vriåtten eller Stigespill ikke frister,
+              kan man hive seg med på en runde Uno, et slag sjakk, slåss om
+              eiendom i Monopol eller gjette hva ordet er i Alias. Her er et
+              stort utvalg som stadig fylles på, si ifra om du savner noe!
+            </p>
+            <p class="actiClassInfo actiInfoBoldTxt">
+              Rollespill gruppen har fast avtale om å benytte det store rommet
+              hver torsdag og annnhver tirsdag!
+            </p>
           </article>
         </div>
       </section>
       <section class="signUpForm">
-        <label for="">
-          <input type="text" />
-        </label>
+        <form action="">
+          <label for="SignUp"></label>
+        </form>
+        <input type="text" />
+        <input type="text" />
       </section>
       <section class="imgGalleryPrev">
         <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
