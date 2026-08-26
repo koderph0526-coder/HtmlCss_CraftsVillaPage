@@ -188,15 +188,15 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.workshopOptionCont > label {
+/* .workshopOptionCont > label {
   order: 1;
 }
 .workshopOptionCont > input {
-  order: 2;
-}
+  order: 2; NO!:  fix in two different divs
+} */
 
 /* GalleryGrid */
 .imgGallery {
