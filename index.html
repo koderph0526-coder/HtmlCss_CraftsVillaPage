@@ -73,7 +73,10 @@
       <!-- First section is a little welcome text -->
       <section class="welcomeTxt">
         <h1>Velkommen til CRAFTSVILLA!</h1>
-        <h2></h2>
+        <h2>
+          Er du en kreativ sjel som søker et kreativt miljø? Da er du på rett
+          plass!
+        </h2>
         <p>
           CRAFTSVILLA har som mål å tilby kreative workshops og aktiviteter som
           fremmer samhold og avslapning blant ulike grupper som foreldre og
@@ -82,7 +85,7 @@
           kunst og utforske kreativiteten sin.
         </p>
       </section>
-      <!-- Following sections showcase activities, and will also function like buttons/links to separate childPages -->
+      <!-- Following section showcases classes and workshops, and will also function like buttons/links to separate childPages when they are ready -->
       <section class="workshInfo">
         <h2>Oversikt over Kurs og Workshop tilbud:</h2>
         <!-- Mulig videre info tekst her?  -->
@@ -220,12 +223,18 @@
           </article>
         </div>
       </section>
+      <!-- This section is for signing up to the classes or workshops above, NOTE: is should be a seperate page -->
       <section class="signUpForm">
+        <h3>Her er påmeldingskjema til kurs og aktiviteter</h3>
         <form action="">
-          <label for="SignUp"></label>
+          <label for="text">Fyll inn info</label>
+          <div class="formGrid">
+            <input type="text" placeholder="Fullt navn" required="required" />
+            <input type="text" placeholder="Ditt Kjønn" />
+            <input type="text" placeholder="Din adresse" required="required" />
+            <input type="text" placeholder="Fødselsdato: dd.mm.åååå" />
+          </div>
         </form>
-        <input type="text" />
-        <input type="text" />
       </section>
       <section class="imgGalleryPrev">
         <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img

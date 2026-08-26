@@ -19,13 +19,14 @@ h3,
 h4 {
   padding-bottom: 1rem;
   padding-top: 1rem;
+  text-shadow: 0 0 8px #9cffde;
 }
 h1 {
   color: #101112;
   font-size: 100px;
-  text-shadow:;
 }
 
+/* Rotating imgs - Herobanner - Styling */
 .carousel {
   display: flex;
   flex-direction: row;
@@ -62,26 +63,28 @@ h1 {
 img {
   width: 100%;
 }
-
+/* Animation for the rotation */
 @keyframes spin {
   from {
     translate: 0;
   }
   to {
-    translate: -70%;
+    translate: -100%;
   }
+  /* Should be seamless animation now, but have yet to check if it works with different size screens */
 }
 
+/* Layout styling til velksomtekst h1, h2 og p */
 .welcomeTxt {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 7rem;
-  /* background-color:; */
+  padding: 6rem 8rem 5rem 8rem;
 }
 
+/* Workshops and classes styling */
 .workshInfo {
   display: flex;
   flex-direction: column;
@@ -97,21 +100,13 @@ img {
 }
 
 .actiCard {
-  background-color: rgb(156, 255, 222);
+  background-color: #9cffde;
   padding: 3rem;
-  border: 5px dotted rgb(20, 159, 159);
+  border: 5px dotted #149f9f;
   border-radius: 25px;
   max-width: 36rem;
   /* Ready to activate when the other pages are done */
   /* cursor: pointer; */
-}
-
-.actiClassInfo {
-  font-style: italic;
-  padding: 1rem;
-}
-.actiInfoBoldTxt {
-  font-weight: bold;
 }
 
 .workshCardImg {
@@ -123,4 +118,23 @@ img {
   object-fit: contain;
   object-position: center center;
   overflow: hidden;
+}
+
+.actiClassInfo {
+  font-style: italic;
+  padding: 1rem;
+}
+.actiInfoBoldTxt {
+  font-weight: bold;
+}
+
+/* Sign up form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  margin: auto; /*Note To self: FIX to be responsive asap, ya DINGUS!*/
+  padding: 2rem;
+  background-color: #9cffde;
 }
