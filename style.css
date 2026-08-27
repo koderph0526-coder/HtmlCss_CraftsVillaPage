@@ -47,6 +47,30 @@ h1 {
   color: #101112;
   font-size: 100px;
 }
+/* Navbar and buttons styling */
+.navHero {
+  position: relative;
+}
+
+.navBtnBar {
+  column-gap: 0.6rem;
+  position: fixed;
+  z-index: 10;
+  top: 15px;
+  left: 33%;
+  /* Dunno why there's weird shadow, figure out and fix it! */
+}
+
+.navBtns {
+  width: 6rem;
+  padding: 0.5rem 1rem;
+  background-color: #9cffde82;
+  color: black;
+}
+.navBtn:hover {
+  cursor: pointer;
+  background-color: #9cffded9;
+}
 
 /* Rotating imgs - Herobanner - Styling */
 .carousel {
@@ -58,6 +82,8 @@ h1 {
   display: none;
 }
 
+/* I'll admit I'm still working on becoming familiar with this code with classNames carousel and group, as I was 
+inspired by a youtube tutorial */
 .group {
   animation: spin 20s infinite linear;
 }
@@ -160,14 +186,19 @@ label {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
-  column-gap: 6rem;
+  column-gap: 4.5rem;
   margin-top: 2rem;
 }
 
 .formGrid > input {
-  width: 25rem;
+  max-width: 25rem;
+  min-width: 20rem;
   padding: 0.5rem;
 }
+.formGrid > select {
+  cursor: pointer;
+}
+/* add responsive styling for phone-screens to make the grid collapse into 1 column! */
 
 .wsAndcOptions {
   margin-top: 3rem;
@@ -177,6 +208,7 @@ label {
 .wsAndcOptions > select {
   width: 35rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .workshopOptionCont {
@@ -184,21 +216,46 @@ label {
   justify-content: space-evenly;
   margin-bottom: 2.5rem;
 }
-.whOptionGap {
+.wsOptionGap {
   row-gap: 0.5rem;
+  text-align: left;
+}
+.wsOptionGap > input {
+  cursor: pointer;
 }
 
 /* The submit part of the form */
 .signUpSubmit {
-  gap: 1rem;
+  gap: 2rem;
 }
 .emailSubmit {
   width: 30rem;
   padding: 0.5rem;
 }
-.btnSubmit {
-  width: 20rem;
+
+/* Deafult styling for btn before email value is accepted in js */
+.btnSubmDefault {
+  width: 15rem;
+  background-color: rgb(212, 212, 212);
+  color: rgb(129, 129, 129);
+  border-radius: 15px;
   padding: 0.8rem;
+}
+/* Styling for when button is activated on js accepting email value */
+.btnSubmit {
+  width: 15rem;
+  border: 2px solid #149f9f;
+  border-radius: 15px;
+  background-color: #c6ffec;
+  padding: 0.8rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.btnSubmit:hover {
+  background-color: #8ff0f0b4;
+  transform: scale(1.03);
+  box-shadow: 3px 3px 8px #149f9f;
+  cursor: pointer;
 }
 
 /* GalleryGrid */
@@ -207,6 +264,9 @@ label {
   margin-top: 5rem;
   margin-bottom: 6rem;
 }
+/* NOTE! Need to add more images or swap some to display mosaic art as well! -- 
+In the separate img gallery I would like to have two displays; one for art from the classes adn wone with art from the 
+workshops */
 .imgGalleryGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -217,4 +277,9 @@ label {
   width: 26rem;
   height: 16rem;
   overflow-y: hidden;
+}
+
+/* Footer styling */
+footer {
+  background-color: #9cffde;
 }

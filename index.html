@@ -13,15 +13,16 @@
     <title>CRAFTSVILLA</title>
   </head>
   <body>
-    <header>
+    <header class="navHero">
       <!-- Per my design idea, I want the header to be the heroBanner/splash. A gently rotating display of img that is. -->
-      <nav class="navBtnBar">
-        <button class=" navBtn" id="navHome">Home</button>
-        <button class="navBtn" id="navContact"></button>
-        <button class="navBtn" id=""></button>
-        <button class="navBtn" id=""></button>
-        <button class="navBtn" id=""></button>
-        <button class="navBtn" id=""></button>
+      <nav class="navBtnBar flexRow centerAll">
+        <!-- FIx links!! -->
+        <a class=" navBtns" href="" id="navHome">Home</a>
+        <a class="navBtns" id="navClasses">Kurs</a>
+        <a class="navBtns" id="navWorksh">Workshops</a>
+        <a class="navBtns" id=""></a>
+        <a class="navBtns" id=""></a>
+        <a class="navBtns" id=""></a>
       </nav>
       <!-- FIX the buttons to hover on top of the imgCarousel! -->
       <div class="carousel flexRow">
@@ -279,12 +280,12 @@
             </select>
             <h4>Workshops</h4>
             <div class="workshopOptionCont flexRow">
-              <div class="whOptionGap flexColumn">
+              <div class="wsOptionGap flexColumn">
                 <label for="workshopActivity"> Lek Med Leire </label>
                 <label for="workshopActivity">Sy og Strikk </label>
                 <label for="workshopActivity">Brett og kortspill </label>
               </div>
-              <div class="whOptionGap flexColumn">
+              <div class="wsOptionGap flexColumn">
                 <input type="checkbox" />
                 <input type="checkbox" />
                 <input type="checkbox" />
@@ -299,7 +300,7 @@
               placeholder="Dine Email"
               required="required"
             />
-            <button class="btnSubmit">Send inn</button>
+            <button class="btnSubmDefault">Send inn</button>
           </div>
         </form>
       </section>
@@ -344,8 +345,33 @@
           </figure>
         </div>
       </section>
-      <!-- <section></section> -->
+      <!-- <section> Was considering adding contact info here, and I might at a later occasion, 
+        for now I'll add it in the footer</section> -->
     </main>
-    <footer></footer>
+    <footer>
+      <!-- May seem redundant to add the navBtns here again, but as the page is supposed to be used friendly for all ages, 
+       I think some redundancies of navigation is to be both acceptable and borderline expected -->
+      <nav class="navBtnBarF flexRow centerAll txtCenter">
+        <a class="navBtn" target="_blank" href="" id="">Home</a>
+        <a class="navBtn" id="navContact"></a>
+        <a class="navBtn" id=""></a>
+        <a class="navBtn" id=""></a>
+        <a class="navBtn" id=""></a>
+        <a class="navBtn" id=""></a>
+      </nav>
+      <div class="contact flexRow">
+        <h6>Kontakt oss:</h6>
+        <div class="flexColumn">
+          <p class="actiInfoBoldTxt">Telefon:</p>
+          <p class="actiInfoBoldTxt">Email:</p>
+          <p class="actiInfoBoldTxt">Addresse:</p>
+        </div>
+        <div class="flexColumn">
+          <p>XXX XX XXX</p>
+          <p>craftvilla_@_asmail.no</p>
+          <p>PlaceholdersGate 38, XXXX Bergen</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
