@@ -25,7 +25,7 @@
       </nav>
       <!-- FIX the buttons to hover on top of the imgCarousel! -->
       <div class="carousel flexRow">
-        <div class="group flexRow">
+        <div class="group flexRow centerAll">
           <figure class="imgContSlide">
             <img
               src="./img/creativeCafe.jpg"
@@ -70,7 +70,7 @@
           </figure>
         </div>
         <!-- Repeat of the imgs above to make the rotating animation as smooth as possible, according to my research the "aria-hidden" should mean that the accessibility aids ignore it as it is purely there for visual design purposes -->
-        <div aria-hidden class="group">
+        <div aria-hidden class="group flexRow centerAll">
           <figure class="imgContSlide">
             <img src="./img/creativeCafe.jpg" alt="" class="imgSlide" />
           </figure>
@@ -113,7 +113,11 @@
       <!-- Following section showcases classes and workshops, and will also function like buttons/links to separate childPages when they are ready -->
       <section class="workshInfo flexColumn">
         <h2>Oversikt over Kurs og Workshop tilbud:</h2>
-        <!-- Mulig videre info tekst her?  -->
+        <p class="txtCenter">
+          Her er våre mest populære kurs og workshops, bruk påmeldingsskjemaet
+          lenger nede på siden for å informere oss om hvilke som er av interesse
+          for deg så sender vi deg mail om når du kan begynne!
+        </p>
         <div class="actiCardGrid">
           <article class="actiCard">
             <h3>Mosaikk Kunst</h3>
@@ -136,7 +140,7 @@
           </article>
           <article class="actiCard">
             <h3>Akvarellmaling</h3>
-            <figure class="workshCardImg">
+            <figure class="workshCardImg flexColumn">
               <img src="./img/paintDetail.jpg" alt="" />
             </figure>
             <h4>Pris: 200kr</h4>
@@ -160,7 +164,7 @@
           </article>
           <article class="actiCard">
             <h3>Lerretsmaling</h3>
-            <figure class="workshCardImg">
+            <figure class="workshCardImg flexColumn">
               <img src="./img/oilPaintingClass.jpg" alt="" />
             </figure>
             <h4>Pris: 300kr</h4>
@@ -182,7 +186,7 @@
           </article>
           <article class="actiCard">
             <h3>Lek med leire</h3>
-            <figure class="workshCardImg">
+            <figure class="workshCardImg flexColumn">
               <img
                 src="./img/clayWorkshop.jpg"
                 alt="To hender som knar leire på et trebord"
@@ -205,7 +209,7 @@
           </article>
           <article class="actiCard">
             <h3>Sy og strikk</h3>
-            <figure class="workshCardImg">
+            <figure class="workshCardImg flexColumn">
               <img
                 src="./img/textileWorkshop.jpg"
                 alt="En kurv med sakser, markeringstusj og diverse farget tråd i."
@@ -226,7 +230,7 @@
           </article>
           <article class="actiCard">
             <h3>Brett og kortspill</h3>
-            <figure class="workshCardImg">
+            <figure class="workshCardImg flexColumn">
               <img
                 src="./img/boardgameCard.jpg"
                 alt="Hjørnet på et Monopoly brettspill, med spillbrikker, kort og små hus på."
@@ -265,9 +269,9 @@
             <input type="text" placeholder="Fødselsdato: dd.mm.åååå" />
             <!-- Note to self: May need different parting into divs and css to achieve the visual I want -->
           </div>
-          <div class="wsAndcOptions flexColumn">
+          <div class="wsAndcOptions flexColumn txtCenter">
             <h4>Kurs</h4>
-            <select name="classes" id="">
+            <select class="txtCenter" name="classes" id="">
               <option value="0">Ikke kurs, takk</option>
               <option value="1">Mosaikk Kunst</option>
               <option value="2">Akvarellmaling</option>
@@ -287,7 +291,16 @@
               </div>
             </div>
           </div>
-          <input type="text" placeholder="Dine Email" />
+          <!-- Put a class on to be able to attach js function so button is inactive until valid email is filled in to input -->
+          <div class="signUpSubmit flexColumn centerAll">
+            <input
+              class="emailSubmit"
+              type="text"
+              placeholder="Dine Email"
+              required="required"
+            />
+            <button class="btnSubmit">Send inn</button>
+          </div>
         </form>
       </section>
       <section class="imgGallery flexColumn">

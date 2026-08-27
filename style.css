@@ -17,6 +17,15 @@
   flex-direction: column;
 }
 
+.centerAll {
+  align-items: center;
+  justify-content: center;
+}
+.txtCenter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 body {
   background-color: #ffc75ee2;
 }
@@ -30,9 +39,9 @@ h2,
 h3,
 h4 {
   padding-bottom: 1rem;
-  padding-top: 1rem;
   text-shadow: 0 0 8px #9cffde;
   text-align: center;
+  margin-bottom: 2rem;
 }
 h1 {
   color: #101112;
@@ -50,9 +59,6 @@ h1 {
 }
 
 .group {
-  justify-content: center;
-  align-items: center;
-  /* padding-right: 0; */
   animation: spin 20s infinite linear;
 }
 .group::-webkit-scrollbar {
@@ -60,8 +66,6 @@ h1 {
 }
 /* the image conatiner styling */
 .imgContSlide {
-  justify-content: center;
-  align-items: center;
   flex: 0 0 52rem;
   overflow-y: auto;
 }
@@ -82,10 +86,9 @@ img {
 
 /* Layout styling til velksomtekst h1, h2 og p */
 .welcomeTxt {
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 6rem 8rem 5rem 8rem;
+  margin-bottom: 2rem;
 }
 
 /* Workshops and classes cards styling */
@@ -124,8 +127,8 @@ img {
   max-width: 28rem;
   max-height: 18.5rem;
   object-fit: contain;
-  object-position: center center;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .actiClassInfo {
@@ -174,12 +177,8 @@ label {
 .wsAndcOptions > select {
   width: 35rem;
   padding: 0.5rem;
-  text-align: center;
 }
 
-.wsAndcOptions > label {
-  text-align: center;
-}
 .workshopOptionCont {
   align-items: center;
   justify-content: space-evenly;
@@ -187,6 +186,19 @@ label {
 }
 .whOptionGap {
   row-gap: 0.5rem;
+}
+
+/* The submit part of the form */
+.signUpSubmit {
+  gap: 1rem;
+}
+.emailSubmit {
+  width: 30rem;
+  padding: 0.5rem;
+}
+.btnSubmit {
+  width: 20rem;
+  padding: 0.8rem;
 }
 
 /* GalleryGrid */
