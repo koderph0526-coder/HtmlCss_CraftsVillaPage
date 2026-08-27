@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+/* FIX DRY! = compress repeating code to utility classes */
+/* Utility styling to be applied to multiple elements */
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: #ffc75ee2;
 }
@@ -29,13 +41,8 @@ h1 {
 
 /* Rotating imgs - Herobanner - Styling */
 .carousel {
-  display: flex;
-  flex-direction: row;
-  /* margin: 90px; */
   width: 100vw;
-  /* border: 5px solid red; */
   overflow-x: auto;
-  /* overflow-y: hidden; */
   height: 34rem;
 }
 .carousel::-webkit-scrollbar {
@@ -43,8 +50,6 @@ h1 {
 }
 
 .group {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   /* padding-right: 0; */
@@ -77,18 +82,14 @@ img {
 
 /* Layout styling til velksomtekst h1, h2 og p */
 .welcomeTxt {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 6rem 8rem 5rem 8rem;
 }
 
-/* Workshops and classes styling */
+/* Workshops and classes cards styling */
 .workshInfo {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 1.5rem;
   padding: 0 5rem 0 5rem;
@@ -101,6 +102,7 @@ img {
   margin-bottom: 3rem;
 }
 
+/* Note: The cards will also function as buttons to their dedicated page when said page is ready */
 .actiCard {
   background-color: #9cffde;
   padding: 3rem;
@@ -118,8 +120,6 @@ img {
 }
 
 .workshCardImg {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   max-width: 28rem;
   max-height: 18.5rem;
@@ -139,13 +139,11 @@ img {
 /* Sign up form styling */
 /* NOTE!! FIX responsive styling, DIS NO WORK ON SMALLER SCREENS */
 form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #9cffde;
-  width: 70vw;
+  width: 60vw;
   margin: auto; /*Note To self: FIX to be responsive asap, ya DINGUS!*/
-  padding: 3rem;
+  padding: 3.5rem;
   border: 1.5px solid #149f9f;
   border-radius: 15px;
 }
@@ -168,35 +166,31 @@ label {
   padding: 0.5rem;
 }
 
-.wsAndcoptions {
+.wsAndcOptions {
   margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
   row-gap: 1rem;
 }
 
-.wsAndcoptions > select {
+.wsAndcOptions > select {
   width: 35rem;
   padding: 0.5rem;
   text-align: center;
 }
 
-.wsAndcoptions > label {
+.wsAndcOptions > label {
   text-align: center;
 }
 .workshopOptionCont {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 2.5rem;
 }
-.chooseOption {
+.whOptionGap {
+  row-gap: 0.5rem;
 }
 
 /* GalleryGrid */
 .imgGallery {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin-top: 5rem;
   margin-bottom: 6rem;

@@ -24,8 +24,8 @@
         <button class="navBtn" id=""></button>
       </nav>
       <!-- FIX the buttons to hover on top of the imgCarousel! -->
-      <div class="carousel">
-        <div class="group">
+      <div class="carousel flexRow">
+        <div class="group flexRow">
           <figure class="imgContSlide">
             <img
               src="./img/creativeCafe.jpg"
@@ -95,7 +95,7 @@
     </header>
     <main>
       <!-- First section is a little welcome text -->
-      <section class="welcomeTxt">
+      <section class="welcomeTxt flexColumn">
         <h1>Velkommen til CRAFTSVILLA!</h1>
         <h2>
           Er du en kreativ sjel som søker et kreativt miljø? Da er du på rett
@@ -111,13 +111,13 @@
       </section>
       <!-- All the incoming sections are supposed to be a mini taste/intro that will eventually lead to their own dedicated pages with a link -->
       <!-- Following section showcases classes and workshops, and will also function like buttons/links to separate childPages when they are ready -->
-      <section class="workshInfo">
+      <section class="workshInfo flexColumn">
         <h2>Oversikt over Kurs og Workshop tilbud:</h2>
         <!-- Mulig videre info tekst her?  -->
         <div class="actiCardGrid">
           <article class="actiCard">
             <h3>Mosaikk Kunst</h3>
-            <figure class="workshCardImg">
+            <figure class="workshCardImg flexColumn">
               <img src="./img/mosaicClassCard.jpg" alt="" />
             </figure>
             <h4>Pris: 400kr</h4>
@@ -251,7 +251,7 @@
       <!-- This section is for signing up to the classes or workshops above, NOTE: is should be a seperate page -->
       <section class="signUpForm">
         <h3>Her er påmeldingskjema til kurs og workshops</h3>
-        <form action="">
+        <form class="flexColumn" action="">
           <label for="text">Fyll inn info</label>
           <div class="formGrid">
             <input type="text" placeholder="Fullt navn" required="required" />
@@ -265,7 +265,7 @@
             <input type="text" placeholder="Fødselsdato: dd.mm.åååå" />
             <!-- Note to self: May need different parting into divs and css to achieve the visual I want -->
           </div>
-          <div class="wsAndcoptions">
+          <div class="wsAndcOptions flexColumn">
             <h4>Kurs</h4>
             <select name="classes" id="">
               <option value="0">Ikke kurs, takk</option>
@@ -274,13 +274,13 @@
               <option value="3">Lerretsmaling</option>
             </select>
             <h4>Workshops</h4>
-            <div class="workshopOptionCont">
-              <div class="chooseOption">
+            <div class="workshopOptionCont flexRow">
+              <div class="whOptionGap flexColumn">
                 <label for="workshopActivity"> Lek Med Leire </label>
                 <label for="workshopActivity">Sy og Strikk </label>
                 <label for="workshopActivity">Brett og kortspill </label>
               </div>
-              <div class="checkboxOption">
+              <div class="whOptionGap flexColumn">
                 <input type="checkbox" />
                 <input type="checkbox" />
                 <input type="checkbox" />
@@ -290,7 +290,7 @@
           <input type="text" placeholder="Dine Email" />
         </form>
       </section>
-      <section class="imgGallery">
+      <section class="imgGallery flexColumn">
         <h3>Kunst fra tidligere deltagere og prosjekter</h3>
         <div class="imgGalleryGrid">
           <figure class="imgContGallery">
