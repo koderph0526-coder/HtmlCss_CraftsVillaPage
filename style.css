@@ -190,13 +190,8 @@ label {
   align-items: center;
   justify-content: space-evenly;
 }
-
-/* .workshopOptionCont > label {
-  order: 1;
+.chooseOption {
 }
-.workshopOptionCont > input {
-  order: 2; NO!:  fix in two different divs
-} */
 
 /* GalleryGrid */
 .imgGallery {
