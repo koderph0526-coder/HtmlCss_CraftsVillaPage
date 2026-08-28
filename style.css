@@ -147,6 +147,7 @@ img {
   border: 5px dotted #149f9f;
   border-radius: 25px;
   max-width: 36rem;
+  gap: 2rem;
   /* Ready to activate when the other pages are done */
   /* cursor: pointer; */
   transition: transform 0.5s ease-in-out;
@@ -171,6 +172,7 @@ img {
   padding: 1rem;
 }
 .actiInfoBoldTxt {
+  padding-top: 1rem;
   font-weight: bold;
 }
 
