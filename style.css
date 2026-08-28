@@ -59,7 +59,7 @@ h1 {
   position: fixed;
   z-index: 10;
   top: 15px;
-  left: 32%;
+  left: 30%;
   /* Dunno why there's weird shadow, figure out and fix it! */
 }
 
@@ -291,4 +291,24 @@ workshops */
 /* Footer styling */
 footer {
   background-color: #9cffde;
+  min-height: 20rem;
+  padding: 7rem;
+}
+
+.navBtnBarF {
+  column-gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.navBtnBarF > a {
+  color: #0f7979;
+}
+
+.contactMediaLinks {
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.contact > h6 {
+  margin-bottom: 1rem;
 }
