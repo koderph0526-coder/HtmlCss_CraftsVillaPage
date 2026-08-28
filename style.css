@@ -44,6 +44,7 @@ h4 {
   text-shadow: 0 0 8px #9cffde;
   text-align: center;
   margin-bottom: 2rem;
+  letter-spacing: 0.5px;
 }
 h1 {
   color: #101112;
@@ -68,6 +69,7 @@ h1 {
   padding: 0.5rem 1rem;
   background-color: #9cffde82;
   font-size: larger;
+  letter-spacing: 1px;
   color: black;
   /* txt shadow to attempt impriving contrast, still needs more improving here.. */
   text-shadow: 0px 0px 8px #d7fff2;
@@ -283,6 +285,7 @@ workshops */
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   width: 85vw;
+  /* Add option to click the grid -> go to galleryPage? */
 }
 .imgContGallery {
   width: 26rem;
@@ -304,6 +307,7 @@ footer {
 
 .navBtnBarF > a {
   color: #0f7979;
+  letter-spacing: 0.5px;
 }
 
 .contactMediaLinks {
@@ -311,6 +315,20 @@ footer {
   justify-content: space-evenly;
 }
 
+/* Sapcing between the contact info details, for better readability */
+.contact > .flexRow {
+  gap: 1rem;
+}
+
 .contact > h6 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+}
+.boldTxt {
+  font-weight: bold;
+}
+
+h6 {
+  font-size: large;
+  letter-spacing: 0.6px;
 }
