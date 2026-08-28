@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* FIX DRY! = compress repeating code to utility classes */
@@ -26,6 +27,7 @@
   margin-bottom: 2rem;
 }
 
+/* Adding color to the whole page background */
 body {
   background-color: #ffc75ee2;
 }
@@ -53,21 +55,25 @@ h1 {
 }
 
 .navBtnBar {
-  column-gap: 0.6rem;
+  column-gap: 1.8rem;
   position: fixed;
   z-index: 10;
   top: 15px;
-  left: 33%;
+  left: 32%;
   /* Dunno why there's weird shadow, figure out and fix it! */
 }
 
 .navBtns {
-  width: 6rem;
+  min-width: 4.5rem;
   padding: 0.5rem 1rem;
   background-color: #9cffde82;
+  font-size: larger;
   color: black;
+  /* txt shadow to attempt impriving contrast, still needs more improving here.. */
+  text-shadow: 0px 0px 8px #d7fff2;
+  border-radius: 10px;
 }
-.navBtn:hover {
+.navBtns:hover {
   cursor: pointer;
   background-color: #9cffded9;
 }
@@ -77,6 +83,9 @@ h1 {
   width: 100vw;
   overflow-x: auto;
   height: 34rem;
+  /* I'm disabling the mouse from scrolling this animation as my method isn't foolproof yet and if scrolled it will show 
+  an empty gap where the animation can't catch up */
+  pointer-events: none;
 }
 .carousel::-webkit-scrollbar {
   display: none;

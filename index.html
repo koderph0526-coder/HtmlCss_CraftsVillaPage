@@ -17,12 +17,34 @@
       <!-- Per my design idea, I want the header to be the heroBanner/splash. A gently rotating display of img that is. -->
       <nav class="navBtnBar flexRow centerAll">
         <!-- FIx links!! -->
-        <a class=" navBtns" href="" id="navHome">Home</a>
-        <a class="navBtns" id="navClasses">Kurs</a>
-        <a class="navBtns" id="navWorksh">Workshops</a>
-        <a class="navBtns" id=""></a>
-        <a class="navBtns" id=""></a>
-        <a class="navBtns" id=""></a>
+        <a class=" navBtns txtCenter" href="./index.html" id="navHome">Home</a>
+        <!-- ^ fix the link above to be inactive while on home page and use ID as way to go to the top of page instead -->
+        <a
+          class="navBtns txtCenter"
+          href="./pages/classOverview.html"
+          id="navClasses"
+          >Kurs</a
+        >
+        <a
+          class="navBtns txtCenter"
+          href="./pages/workoshops.html"
+          id="navWorksh"
+          >Workshops</a
+        >
+        <a class="navBtns txtCenter" href="./pages/signUpAndContact.html" id=""
+          >Påmelding</a
+        >
+        <a class="navBtns txtCenter" href="./pages/galleryForum.html" id=""
+          >Galleri</a
+        >
+        <a
+          class="navBtns txtCenter"
+          href="./pages/feedbackAndContact.html"
+          id=""
+          >Tilbakemelding</a
+        >
+        <!-- Maybe an about us page is appropriate IF they have many employees and feel like some info is better fitted on a 
+         separate page instead of the home page -->
       </nav>
       <!-- FIX the buttons to hover on top of the imgCarousel! -->
       <div class="carousel flexRow">
@@ -359,18 +381,17 @@
         <a class="navBtn" id=""></a>
         <a class="navBtn" id=""></a>
       </nav>
-      <div class="contact flexRow">
+      <div class="contact flexcolum">
         <h6>Kontakt oss:</h6>
-        <div class="flexColumn">
+        <div class="flexRow">
           <p class="actiInfoBoldTxt">Telefon:</p>
-          <p class="actiInfoBoldTxt">Email:</p>
-          <p class="actiInfoBoldTxt">Addresse:</p>
-        </div>
-        <div class="flexColumn">
           <p>XXX XX XXX</p>
+          <p class="actiInfoBoldTxt">Email:</p>
           <p>craftvilla_@_asmail.no</p>
+          <p class="actiInfoBoldTxt">Addresse:</p>
           <p>PlaceholdersGate 38, XXXX Bergen</p>
         </div>
+        <!-- <div class="flexColumn"></div> -->
       </div>
     </footer>
   </body>
